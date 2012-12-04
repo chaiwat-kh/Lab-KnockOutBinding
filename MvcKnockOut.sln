@@ -5,25 +5,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcKnockOut", "MvcKnockOut\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportService", "SportService\SportService.csproj", "{320C9CB0-CEB6-4EF6-A8F9-8CBADC6EE50E}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "jquery.scrollTo-master", "..\..\..\OpenSource\jQuery Plugins\jquery.scrollTo-master\jquery.scrollTo-master\", "{39D84FCA-898B-4042-B922-2EDB14C77EDA}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/jquery.scrollTo-master"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\OpenSource\jQuery Plugins\jquery.scrollTo-master\jquery.scrollTo-master\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\jquery.scrollTo-master\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/jquery.scrollTo-master"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\OpenSource\jQuery Plugins\jquery.scrollTo-master\jquery.scrollTo-master\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\jquery.scrollTo-master\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "22206"
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyStart", "EasyStart\EasyStart.csproj", "{D9E16CCE-8555-4E9E-B941-F30532B0DC9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,10 +21,10 @@ Global
 		{320C9CB0-CEB6-4EF6-A8F9-8CBADC6EE50E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{320C9CB0-CEB6-4EF6-A8F9-8CBADC6EE50E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{320C9CB0-CEB6-4EF6-A8F9-8CBADC6EE50E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{39D84FCA-898B-4042-B922-2EDB14C77EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39D84FCA-898B-4042-B922-2EDB14C77EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39D84FCA-898B-4042-B922-2EDB14C77EDA}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{39D84FCA-898B-4042-B922-2EDB14C77EDA}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{D9E16CCE-8555-4E9E-B941-F30532B0DC9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E16CCE-8555-4E9E-B941-F30532B0DC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E16CCE-8555-4E9E-B941-F30532B0DC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E16CCE-8555-4E9E-B941-F30532B0DC9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

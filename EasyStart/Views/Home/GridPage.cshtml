@@ -1,0 +1,216 @@
+﻿@section head{
+    
+}
+
+
+<div id="divBoxed" class="container">
+    <div class="transparent-bg" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: -1;zoom: 1;"></div>
+    <div class="divPanel notop nobottom">
+        <div class="row-fluid">
+            <div class="span6">					
+                <div id="divLogo">
+                    <a href="index.html" id="divSiteTitle">Easy Start</a><br />
+                    <a href="index.html" id="divTagLine">Clean HTML5 Template..</a>
+                </div>
+	        </div>
+            <div class="span6">
+            </div>
+        </div>
+        <div class="row-fluid">
+            <div class="span12">					
+                <div id="divMenuRight" class="pull-right">
+                    <div class="navbar">
+                        <button type="button" class="btn btn-navbar-highlight btn-large btn-primary" 
+                                data-toggle="collapse" data-target=".nav-collapse">
+                            NAVIGATION 
+                            <span class="icon-chevron-down icon-white"></span>
+                        </button>
+                        <div class="nav-collapse collapse">
+                            <ul class="nav nav-pills ddmenu">
+                                <li class="dropdown"><a href="@Url.Action("EasyStart")">Home</a></li>
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle">Page <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#" class="dropdown-toggle">Dropdown Item</a></li>
+                                        <li><a href="#">Dropdown Item</a></li>
+                                        <li><a href="#">Dropdown Item</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown active"><a href="@Url.Action("GridPage")">Grid</a></li>
+                                <li class="dropdown"><a href="@Url.Action("SimplePage")">Simple</a></li>
+                            </ul>
+                        </div> <!-- nav-collapse -->
+                    </div> <!-- navbar-->
+                </div> <!-- divMenuRight -->
+	        </div> <!-- span12-->
+        </div> <!-- row-fluid-->
+
+        <div class="row-fluid">
+            <div class="span12">
+                <div id="contentInnerSeparator"></div>
+            </div>
+        </div> <!-- row-fluid-->
+
+    </div> <!-- divPanel notop -->
+
+    <div class="contentArea">
+        <div class="divPanel notop page-content">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="breadcrumbs">
+                        <a href="@Url.Action("EasyStart")">Home</a> &nbsp;/&nbsp; <span>Blog</span>
+                    </div><!-- breadcrumbs -->
+
+                    <h1>Grid</h1>
+
+                    <div id="gridArea">
+                        <ul id="tiles">
+                            <li>
+                                <img src="~/Img/thumbs/photography1.jpg" alt="" />
+                                <h4>Duis mollis</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s. <a href="#" class="more_link">Read More</a></p>
+                            </li>
+                            @*<li>
+                                <article class="youtube video flex-video">
+                                    <iframe width="560" height="315" src="http://www.youtube.com/embed/e7OYeIXsW60"></iframe>
+                                </article>   
+                                <h4>Lorem Ipsum</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#" class="more_link">Read More</a></p>
+                            </li>*@
+                            <li><img src="~/Img/thumbs/photography2.jpg" alt="" /><h4>Duis mollis, est non commodo luctus</h4><p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. <a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/construction1.jpg" alt="" /><h4>Lorem Ipsum is simply dummy text</h4><p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. <a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/construction2.jpg" alt="" /><h4>Duis mollis, est non commodo luctus</h4><p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/interior.jpg" alt="" /><h4>Lorem Ipsum</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.<a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/art.jpg" alt="" /><h4>Lorem Ipsum is simply dummy text</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/food1.jpg" alt="" /><h4>Duis molli</h4><p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. <a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/food2.jpg" alt="" /><h4>Lorem Ipsum is simply dummy</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/kids.jpg" alt="" /><h4>Duis mollis, est non commodo luctus</h4><p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. <a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/music1.jpg" alt="" /><h4>Duis mollis</h4><p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. <a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/music2.jpg" alt="" /><h4>Lorem Ipsum</h4><p>When an unknown printer took a galley of type and scrambled it to make a type specimen book. <a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/office1.jpg" alt="" /><h4>Lorem Ipsum is simply dummy</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.<a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/office2.jpg" alt="" /><h4>Lorem Ipsum</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/people1.jpg" alt="" /><h4>Duis mollis, est non commodo</h4><p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. <a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/people2.jpg" alt="" /><h4>Lorem Ipsum</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/sport.jpg" alt="" /><h4>Duis mollis</h4><p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. <a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/transportation.jpg" alt="" /><h4>Lorem Ipsum is simply dummy</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#" class="more_link">Read More</a></p></li>
+                            <li><img src="~/Img/thumbs/travelling.jpg" alt="" /><h4>Lorem Ipsum</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="#" class="more_link">Read More</a></p></li>
+                            </ul>
+                    </div> <!-- gridArea -->
+                </div> <!--span12-->
+
+            </div><!--row-fluid-->
+
+             <div id="footerInnerSeparator"></div>
+
+        </div><!--divPanel-->
+    </div><!--contentArea-->
+   
+   <div id="footerOuterSeparator"></div>
+
+   <div id="divFooter" class="footerArea">
+        <div class="divPanel">
+            <div class="row-fluid">
+                <div class="span3" id="footerArea1">
+                    <h3>About Company</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+                    <p>
+                        <a href="#" title="Terms of Use">Terms of Use</a><br />
+                        <a href="#" title="Privacy Policy">Privacy Policy</a><br />
+                        <a href="#" title="FAQ">FAQ</a><br />
+                        <a href="#" title="Sitemap">Sitemap</a>
+                    </p>
+
+                </div> <!-- span3 -->
+                <div class="span3" id="footerArea2">
+                    <h3>Recent Blog Posts</h3> 
+                    <p>
+                        <a href="#" title="">Lorem Ipsum is simply dummy text</a><br />
+                        <span style="text-transform:none;">2 hours ago</span>
+                    </p>
+                    <p>
+                        <a href="#" title="">Duis mollis, est non commodo luctus</a><br />
+                        <span style="text-transform:none;">5 hours ago</span>
+                    </p>
+                    <p>
+                        <a href="#" title="">Maecenas sed diam eget risus varius</a><br />
+                        <span style="text-transform:none;">19 hours ago</span>
+                    </p>
+                    <p>
+                        <a href="#" title="">VIEW ALL POSTS</a>
+                    </p>
+
+                </div>
+                <div class="span3" id="footerArea3">
+                    <h3>Sample Footer Content</h3>
+                    <p>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+                </div>
+                <div class="span3" id="footerArea4">
+                    <h3>Get in Touch</h3>  
+                    <ul id="contact-info">
+                        <li>                  
+                            <span class="glyph general icon">r</span>
+                            <span class="field">Phone:</span>
+                            <br />
+                            (123) 456 7890 / 456 7891                                                                      
+                        </li>
+                        <li>
+                            <span class="glyph general icon">h</span>
+                            <span class="field">Email:</span>
+                            <br />
+                            <a href="mailto:info@yourdomain.com" title="Email">info@yourdomain.com</a>
+                        </li>
+                        <li>
+                            <span class="glyph general icon" style="margin-bottom:50px">m</span>
+                            <span class="field">Address:</span>
+                            <br />
+                            123 Street<br />
+                            12345 City, State<br />
+                            Country
+                        </li>
+                    </ul>
+                </div>
+
+            </div> <!-- row-fluid -->
+
+            <br /><br />
+            <div class="row-fluid">
+                <div class="span12">
+                    <p id="copyright">Copyright © 2012 Your Company. All Rights Reserved.</p>
+                    <p id="bookmarks"><a href="#"><span class="glyph social">e</span> Twitter</a>
+                    <a href="#"><span class="glyph social">d</span> Facebook</a>
+                    <a href="#"><span class="glyph social">o</span> Flickr</a>
+                    <a href="#"><span class="glyph social">r</span> Skype</a>
+                    <a href="#"><span class="glyph social">c</span> Blog</a></p>
+                </div>
+            </div> <!--row-fluid -->
+        </div> <!-- divPanel -->
+    </div>
+
+</div> <!--container-->
+<br /><br /><br />
+
+@section script{    
+    <script>
+        $(document).ready(function () {
+            $('iframe').each(function () {/*fix youtube z-index*/
+                var url = $(this).attr("src");
+                if (url.indexOf("youtube.com") >= 0) {
+                    if (url.indexOf("?") >= 0) {
+                        $(this).attr("src", url + "&wmode=transparent");
+                    } else {
+                        $(this).attr("src", url + "?wmode=transparent");
+                    }
+                }
+            });
+
+            $('ul.nav li.dropdown').hover(function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+            }, function () {
+                $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+            });
+        });
+
+        $(window).load(function () { var options = { autoResize: true, container: $('#gridArea'), offset: 10 }; var handler = $('#tiles li'); handler.wookmark(options); $('#tiles li img').each(function () { var newHeight = $(this).height() + $(this).parent().find('h4').height() + $(this).parent().find('p').height() + 9; $(this).parent().css('height', newHeight + 'px'); }); handler.wookmark(options); handler.wookmark(options); });
+
+
+    </script>
+}

@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "ScrollTo";
+}
+
+<style type="text/css">
+    .item
+    {
+        width: 500px;  
+        margin: 10px;
+        float: left;      
+    }
+    
+    .itemText
+    {
+        width: 200px;  
+        margin: 10px;
+        float: left;
+             
+    }
+</style>
+
+<div id="screen">
+
+		<div id="navigation">
+
+			<ul>
+
+				<li><a href="#">Section 1</a></li>
+
+				<li><a href="#">Section 3</a></li>
+
+				<li><a href="#">Section 5</a></li>
+
+			</ul>
+
+		</div>
+
+		<div id="sections">
+
+			<ul>
+
+				<li>
+
+					<h2>Section 1</h2>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et turpis sed metus fermentum pellentesque. Vestibulum auctor neque ac nunc elementum malesuada. Praesent non est sed libero vestibulum consectetuer. Sed vehicula. Vivamus quis tellus sit amet erat ultrices luctus. Fusce a ligula. Fusce viverra libero vitae velit. Aenean bibendum nibh non lorem. Suspendisse quis velit. Integer sit amet lacus. Curabitur tristique. Morbi eu lectus. Vestibulum tristique aliquam quam. Sed neque.</p>
+
+					<p>Nulla facilisi. Quisque eleifend libero. Sed eros. Morbi vel leo. Morbi varius tincidunt sem. Nam sodales volutpat velit. Suspendisse potenti. Duis vehicula pede non nisi. Proin elit pede, ultrices non, ultrices quis, vulputate sit amet, magna. Praesent sodales pellentesque justo. Donec blandit, augue id convallis congue, magna libero hendrerit erat, id blandit est lorem a tellus. Vestibulum tincidunt lectus quis metus. Pellentesque placerat lacus in urna.</p>
+
+				</li>
+
+				<li>
+
+					<h2>Section 2</h2>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et turpis sed metus fermentum pellentesque. Vestibulum auctor neque ac nunc elementum malesuada. Praesent non est sed libero vestibulum consectetuer. Sed vehicula. Vivamus quis tellus sit amet erat ultrices luctus. Fusce a ligula. Fusce viverra libero vitae velit. Aenean bibendum nibh non lorem. Suspendisse quis velit. Integer sit amet lacus. Curabitur tristique. Morbi eu lectus. Vestibulum tristique aliquam quam. Sed neque.</p>
+
+					<p>Nulla facilisi. Quisque eleifend libero. Sed eros. Morbi vel leo. Morbi varius tincidunt sem. Nam sodales volutpat velit. Suspendisse potenti. Duis vehicula pede non nisi. Proin elit pede, ultrices non, ultrices quis, vulputate sit amet, magna. Praesent sodales pellentesque justo. Donec blandit, augue id convallis congue, magna libero hendrerit erat, id blandit est lorem a tellus. Vestibulum tincidunt lectus quis metus. Pellentesque placerat lacus in urna.</p>
+
+				</li>
+
+				<li class="fallen">
+
+					<h2>Section 3</h2>
+
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et turpis sed metus fermentum pellentesque. Vestibulum auctor neque ac nunc elementum malesuada. Praesent non est sed libero vestibulum consectetuer. Sed vehicula. Vivamus quis tellus sit amet erat ultrices luctus. Fusce a ligula. Fusce viverra libero vitae velit. Aenean bibendum nibh non lorem. Suspendisse quis velit. Integer sit amet lacus. Curabitur tristique. Morbi eu lectus. Vestibulum tristique aliquam quam. Sed neque.</p>
+
+					<p>Nulla facilisi. Quisque eleifend libero. Sed eros. Morbi vel leo. Morbi varius tincidunt sem. Nam sodales volutpat velit. Suspendisse potenti. Duis vehicula pede non nisi. Proin elit pede, ultrices non, ultrices quis, vulputate sit amet, magna. Praesent sodales pellentesque justo. Donec blandit, augue id convallis congue, magna libero hendrerit erat, id blandit est lorem a tellus. Vestibulum tincidunt lectus quis metus. Pellentesque placerat lacus in urna.</p>
+
+				</li>				
+
+				<li>
+
+					<h2>Section 4</h2>
+
+					<p>Nullam et sem eget massa pellentesque dapibus. Nulla sollicitudin enim quis odio. Quisque ipsum lorem, volutpat eget, condimentum ac, posuere id, risus. Suspendisse tortor metus, aliquet in, varius nec, hendrerit a, libero. Suspendisse iaculis. Fusce commodo urna ut enim. Fusce tempus eros. Phasellus sodales tellus id dolor. Integer sollicitudin, turpis ac interdum condimentum, enim enim tempus metus, sed imperdiet massa diam nec elit. Mauris ante augue, hendrerit non, commodo ac, porttitor eu, turpis.</p>
+
+					<p>In fermentum nibh ut diam. Mauris sagittis, tellus ac molestie fermentum, arcu orci pharetra mi, id vehicula massa leo vel pede. Nullam semper tincidunt lorem. Proin arcu libero, auctor sed, interdum egestas, ullamcorper et, lacus. Donec id lectus eget diam accumsan ullamcorper. Donec at urna et lacus condimentum pellentesque. Phasellus dapibus hendrerit massa. Sed sed ipsum. Quisque venenatis. Donec vel turpis.</p>
+
+				</li>
+
+				<li>
+
+					<h2>Section 5</h2>
+
+					<p>Nullam et sem eget massa pellentesque dapibus. Nulla sollicitudin enim quis odio. Quisque ipsum lorem, volutpat eget, condimentum ac, posuere id, risus. Suspendisse tortor metus, aliquet in, varius nec, hendrerit a, libero. Suspendisse iaculis. Fusce commodo urna ut enim. Fusce tempus eros. Phasellus sodales tellus id dolor. Integer sollicitudin, turpis ac interdum condimentum, enim enim tempus metus, sed imperdiet massa diam nec elit. Mauris ante augue, hendrerit non, commodo ac, porttitor eu, turpis.</p>
+
+					<p>In fermentum nibh ut diam. Mauris sagittis, tellus ac molestie fermentum, arcu orci pharetra mi, id vehicula massa leo vel pede. Nullam semper tincidunt lorem. Proin arcu libero, auctor sed, interdum egestas, ullamcorper et, lacus. Donec id lectus eget diam accumsan ullamcorper. Donec at urna et lacus condimentum pellentesque. Phasellus dapibus hendrerit massa.</p>
+
+				</li>
+
+			</ul>
+
+		</div>
+
+

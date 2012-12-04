@@ -1,0 +1,143 @@
+﻿
+@section head{
+    <style>
+    /* Carousel base class */
+    .carousel {
+      margin-bottom: 60px;
+    }
+
+    .carousel .container {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    .carousel-control {
+      background-color: transparent;
+      border: 0;
+      font-size: 120px;
+      margin-top: 0;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+
+    .carousel .item {
+      height: 400px;
+    }
+    .carousel img {
+      min-width: 100%;
+      height: 400px;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin-bottom: 100px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+    .carousel-caption .btn {
+      margin-top: 10px;
+    }    
+</style>
+}
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <ul class="nav nav-pills pull-right">
+        <li class="active"><a href="javascript:void(0)" onClick="goToByScrollTop()"><i class="icon-home icon-white"></i> Home</a></li>
+        <li><a href="javascript:void(0)" onClick="goToByScroll('Section2')"><i class="icon-book"></i> Section 2</a></li>
+        <li><a href="javascript:void(0)" onClick="goToByScroll('Section3')"><i class="icon-book"></i> Section 3</a></li>
+        <li><a href="javascript:void(0)" onClick="goToByScroll('Section4')"><i class="icon-pencil"></i> Section 4</a></li>
+        <li><a href="javascript:void(0)" onClick="goToByScroll('Section5')">Go to anchor 5</a></li>            
+    </ul>
+</div>
+
+<!-- Carousel ================================================== -->
+<div id="myCarousel" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="active item" >
+            <img src="~/Img/Lanterns.jpg" alt="" />
+            <div class="container">                            
+                <div class="carousel-caption">
+                    <h4>First Thumbnail label</h4>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                </div>   
+            </div>            
+        </div>
+        <div class="item">
+            <img src="~/Img/NY.jpg" alt=""/>
+            <div class="container">
+                <div class="carousel-caption">
+                    <h2>Another example headline.</h2>
+                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>              
+                </div>
+            </div>
+        </div>
+                    
+    </div>  @*carousel-inner*@
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>  @*myCarousel*@
+
+<div>
+    <div id="sections">
+		<ul>
+			<li id="Section1">
+				<h2>Section 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et turpis sed metus fermentum pellentesque. Vestibulum auctor neque ac nunc elementum malesuada. Praesent non est sed libero vestibulum consectetuer. Sed vehicula. Vivamus quis tellus sit amet erat ultrices luctus. Fusce a ligula. Fusce viverra libero vitae velit. Aenean bibendum nibh non lorem. Suspendisse quis velit. Integer sit amet lacus. Curabitur tristique. Morbi eu lectus. Vestibulum tristique aliquam quam. Sed neque.</p>
+
+				<p>Nulla facilisi. Quisque eleifend libero. Sed eros. Morbi vel leo. Morbi varius tincidunt sem. Nam sodales volutpat velit. Suspendisse potenti. Duis vehicula pede non nisi. Proin elit pede, ultrices non, ultrices quis, vulputate sit amet, magna. Praesent sodales pellentesque justo. Donec blandit, augue id convallis congue, magna libero hendrerit erat, id blandit est lorem a tellus. Vestibulum tincidunt lectus quis metus. Pellentesque placerat lacus in urna.</p>
+
+			</li>
+			<li id="Section2">
+				<h2>Section 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et turpis sed metus fermentum pellentesque. Vestibulum auctor neque ac nunc elementum malesuada. Praesent non est sed libero vestibulum consectetuer. Sed vehicula. Vivamus quis tellus sit amet erat ultrices luctus. Fusce a ligula. Fusce viverra libero vitae velit. Aenean bibendum nibh non lorem. Suspendisse quis velit. Integer sit amet lacus. Curabitur tristique. Morbi eu lectus. Vestibulum tristique aliquam quam. Sed neque.</p>
+
+				<p>Nulla facilisi. Quisque eleifend libero. Sed eros. Morbi vel leo. Morbi varius tincidunt sem. Nam sodales volutpat velit. Suspendisse potenti. Duis vehicula pede non nisi. Proin elit pede, ultrices non, ultrices quis, vulputate sit amet, magna. Praesent sodales pellentesque justo. Donec blandit, augue id convallis congue, magna libero hendrerit erat, id blandit est lorem a tellus. Vestibulum tincidunt lectus quis metus. Pellentesque placerat lacus in urna.</p>
+
+			</li>
+			<li id="Section3">
+				<h2>Section 3</h2>
+
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et turpis sed metus fermentum pellentesque. Vestibulum auctor neque ac nunc elementum malesuada. Praesent non est sed libero vestibulum consectetuer. Sed vehicula. Vivamus quis tellus sit amet erat ultrices luctus. Fusce a ligula. Fusce viverra libero vitae velit. Aenean bibendum nibh non lorem. Suspendisse quis velit. Integer sit amet lacus. Curabitur tristique. Morbi eu lectus. Vestibulum tristique aliquam quam. Sed neque.</p>
+
+				<p>Nulla facilisi. Quisque eleifend libero. Sed eros. Morbi vel leo. Morbi varius tincidunt sem. Nam sodales volutpat velit. Suspendisse potenti. Duis vehicula pede non nisi. Proin elit pede, ultrices non, ultrices quis, vulputate sit amet, magna. Praesent sodales pellentesque justo. Donec blandit, augue id convallis congue, magna libero hendrerit erat, id blandit est lorem a tellus. Vestibulum tincidunt lectus quis metus. Pellentesque placerat lacus in urna.</p>
+
+			</li>
+			<li id="Section4">
+				<h2>Section 4</h2>
+				<p>Nullam et sem eget massa pellentesque dapibus. Nulla sollicitudin enim quis odio. Quisque ipsum lorem, volutpat eget, condimentum ac, posuere id, risus. Suspendisse tortor metus, aliquet in, varius nec, hendrerit a, libero. Suspendisse iaculis. Fusce commodo urna ut enim. Fusce tempus eros. Phasellus sodales tellus id dolor. Integer sollicitudin, turpis ac interdum condimentum, enim enim tempus metus, sed imperdiet massa diam nec elit. Mauris ante augue, hendrerit non, commodo ac, porttitor eu, turpis.</p>
+
+				<p>In fermentum nibh ut diam. Mauris sagittis, tellus ac molestie fermentum, arcu orci pharetra mi, id vehicula massa leo vel pede. Nullam semper tincidunt lorem. Proin arcu libero, auctor sed, interdum egestas, ullamcorper et, lacus. Donec id lectus eget diam accumsan ullamcorper. Donec at urna et lacus condimentum pellentesque. Phasellus dapibus hendrerit massa. Sed sed ipsum. Quisque venenatis. Donec vel turpis.</p>
+
+			</li>
+			<div id="Section5">
+				<h2>Section 5</h2>
+				<p>Nullam et sem eget massa pellentesque dapibus. Nulla sollicitudin enim quis odio. Quisque ipsum lorem, volutpat eget, condimentum ac, posuere id, risus. Suspendisse tortor metus, aliquet in, varius nec, hendrerit a, libero. Suspendisse iaculis. Fusce commodo urna ut enim. Fusce tempus eros. Phasellus sodales tellus id dolor. Integer sollicitudin, turpis ac interdum condimentum, enim enim tempus metus, sed imperdiet massa diam nec elit. Mauris ante augue, hendrerit non, commodo ac, porttitor eu, turpis.</p>
+
+				<p>In fermentum nibh ut diam. Mauris sagittis, tellus ac molestie fermentum, arcu orci pharetra mi, id vehicula massa leo vel pede. Nullam semper tincidunt lorem. Proin arcu libero, auctor sed, interdum egestas, ullamcorper et, lacus. Donec id lectus eget diam accumsan ullamcorper. Donec at urna et lacus condimentum pellentesque. Phasellus dapibus hendrerit massa.</p>
+
+			</div>
+		</ul>
+	</div>
+</div>
+
+@section script{
+    <script>
+        function goToByScroll(id) {
+            $('body').animate({ scrollTop: $("#" + id).offset().top }, 'fast');
+        }
+        function goToByScrollTop() {
+            $('body').animate({ scrollTop: 0 }, 'fast');
+        }
+    </script>
+}
+
+
