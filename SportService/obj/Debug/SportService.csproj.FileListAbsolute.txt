@@ -1,0 +1,7 @@
+D:\Lab\Lab-KnockOut\MvcKnockOut\SportService\bin\Debug\SportService.dll
+D:\Lab\Lab-KnockOut\MvcKnockOut\SportService\bin\Debug\SportService.pdb
+D:\Lab\Lab-KnockOut\MvcKnockOut\SportService\bin\Debug\MongoDB.Bson.dll
+D:\Lab\Lab-KnockOut\MvcKnockOut\SportService\bin\Debug\MongoDB.Driver.dll
+D:\Lab\Lab-KnockOut\MvcKnockOut\SportService\obj\Debug\ResolveAssemblyReference.cache
+D:\Lab\Lab-KnockOut\MvcKnockOut\SportService\obj\Debug\SportService.dll
+D:\Lab\Lab-KnockOut\MvcKnockOut\SportService\obj\Debug\SportService.pdb
