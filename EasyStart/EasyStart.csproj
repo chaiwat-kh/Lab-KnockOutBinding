@@ -134,6 +134,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Img\Beach.jpg" />
+    <Content Include="Img\grey.gif" />
     <Content Include="Img\Lanterns.jpg" />
     <Content Include="Img\NY.jpg" />
     <Content Include="Img\subtle_stripes.png" />
@@ -191,7 +192,9 @@
     <Content Include="Scripts\jquery-1.8.3.min.js" />
     <Content Include="Scripts\jquery-ui-1.8.11.js" />
     <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.lazyload.min.js" />
     <Content Include="Scripts\jquery.masonry.min.js" />
+    <Content Include="Scripts\jquery.scrollstop.min.js" />
     <Content Include="Scripts\jquery.scrollto.js" />
     <Content Include="Scripts\jquery.serialScroll-1.2.2-min.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
@@ -252,6 +255,7 @@
     <Content Include="Views\Home\EasyStart.cshtml" />
     <Content Include="Views\Home\SimplePage.cshtml" />
     <Content Include="Views\Home\GridPage.cshtml" />
+    <Content Include="Views\Home\KnockOutGridPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SportService\SportService.csproj">

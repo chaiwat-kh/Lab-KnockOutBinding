@@ -55,6 +55,11 @@ namespace EasyStart.Controllers
             return View();
         }
 
+        public ActionResult KnockOutGridPage()
+        {
+            return View();
+        }
+
         public JsonResult GetData()
         {
             var news = _sportService.GetData();

@@ -9,7 +9,7 @@
         <div class="row-fluid">
             <div class="span6">					
                 <div id="divLogo">
-                    <a href="index.html" id="divSiteTitle">Easy Start</a><br />
+                    <a href="@Url.Action("EasyStart")" id="divSiteTitle">Easy Start</a><br />
                     <a href="index.html" id="divTagLine">Clean HTML5 Template..</a>
                 </div>
 	        </div>
@@ -38,6 +38,7 @@
                                 </li>
                                 <li class="dropdown active"><a href="@Url.Action("GridPage")">Grid</a></li>
                                 <li class="dropdown"><a href="@Url.Action("SimplePage")">Simple</a></li>
+                                <li class="dropdown"><a href="@Url.Action("KnockOutGridPage")">Knock Out Grid</a></li>
                             </ul>
                         </div> <!-- nav-collapse -->
                     </div> <!-- navbar-->
@@ -67,7 +68,10 @@
                         <ul id="tiles">
                             <li>
                                 <img src="~/Img/thumbs/photography1.jpg" alt="" />
-                                <h4>Duis mollis</h4><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s. <a href="#" class="more_link">Read More</a></p>
+                                <h4>Duis mollis</h4>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s. 
+                                    <a href="#" class="more_link">Read More</a>
+                                </p>
                             </li>
                             @*<li>
                                 <article class="youtube video flex-video">
@@ -211,6 +215,9 @@
 
         $(window).load(function () { var options = { autoResize: true, container: $('#gridArea'), offset: 10 }; var handler = $('#tiles li'); handler.wookmark(options); $('#tiles li img').each(function () { var newHeight = $(this).height() + $(this).parent().find('h4').height() + $(this).parent().find('p').height() + 9; $(this).parent().css('height', newHeight + 'px'); }); handler.wookmark(options); handler.wookmark(options); });
 
+        $(function () {
+            $("img").lazyload({ placeholder: "Img/grey.gif", effect: "fadeIn" });
+        });
 
     </script>
 }
