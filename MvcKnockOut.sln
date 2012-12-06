@@ -7,7 +7,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportService", "SportServic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyStart", "EasyStart\EasyStart.csproj", "{D9E16CCE-8555-4E9E-B941-F30532B0DC9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Test", "Service.Test\Service.Test.csproj", "{834624E0-1AB2-4C10-9AEB-F12E75499FBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{34303393-C8E9-451F-829F-68CEA7FA1503}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		MvcKnockOut.vsmdi = MvcKnockOut.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MvcKnockOut.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -25,6 +37,10 @@ Global
 		{D9E16CCE-8555-4E9E-B941-F30532B0DC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9E16CCE-8555-4E9E-B941-F30532B0DC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9E16CCE-8555-4E9E-B941-F30532B0DC9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{834624E0-1AB2-4C10-9AEB-F12E75499FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{834624E0-1AB2-4C10-9AEB-F12E75499FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{834624E0-1AB2-4C10-9AEB-F12E75499FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{834624E0-1AB2-4C10-9AEB-F12E75499FBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

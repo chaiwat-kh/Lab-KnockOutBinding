@@ -60,9 +60,23 @@ namespace EasyStart.Controllers
             return View();
         }
 
-        public JsonResult GetData()
+        public JsonResult GetGridData()
         {
-            var news = _sportService.GetData();
+            var news = _sportService.GetGridData();
+
+            return Json(news, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult GetFullCol()
+        {
+            var news = _sportService.GetFullCol();
+
+            return Json(news, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult GetHomePageData()
+        {
+            var news = _sportService.GetHomePageData();
 
             return Json(news, JsonRequestBehavior.AllowGet);
         }

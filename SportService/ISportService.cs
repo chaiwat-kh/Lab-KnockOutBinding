@@ -10,6 +10,11 @@ namespace SportService
 {
     public interface ISportService
     {
-        IList<PageNews> GetData();
+        IList<PageNews> GetGridData();
+        PageNews GetFullCol();
+        IList<PageNews> GetThirdCols();
+        PageNews GetTwoInThirdCols();
+        PageNews GetSideBox();
+        IList<object> GetHomePageData();
     }
 }
